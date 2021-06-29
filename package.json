@@ -1,0 +1,13 @@
+{
+  "name": "devops-extensions-docs",
+  "version": "0.0.1",
+  "description": "Docs for my Azure DevOps extensions",
+  "scripts": {
+    "dev": "docsify serve ./docs/"
+  },
+  "author": "Joachim Dalen (https://joachimdalen.no)",
+  "license": "ISC",
+  "dependencies": {
+    "docsify-cli": "^4.4.3"
+  }
+}
