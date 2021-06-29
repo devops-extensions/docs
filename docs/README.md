@@ -15,3 +15,11 @@ This site serves documentation for the following extensions
 ## Bug Report
 
 If you get any bugs or face any issues, please create an issue on the [GitHub repo](https://github.com/joachimdalen/AzureDevOpsExtensions/issues/new/choose)
+
+When reporting bugs, please use the template provided and try to be as descriptive as possible about the issue at hand. If possible, provide information that can help me reproduce the issue.
+
+If you need to provide log files or error messages, please use a paste service to prevent huge comments in the issue. You can use services like:
+
+- [Pastebin](https://pastebin.com/)
+- [Hastebin](https://hastebin.com/)
+- [GitHub Gist](https://gist.github.com/)
