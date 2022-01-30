@@ -49,14 +49,18 @@ const config = {
             docId: "pull-request-utils/index",
             position: "left",
             label: "Pull Request Utils",
-            items: [
-              {
-                type: "doc",
-                docId: "auto-state/index",
-                position: "left",
-                label: "Auto State",
-              },
-            ],
+          },
+          {
+            type: "doc",
+            docId: "env-transform/index",
+            position: "left",
+            label: "Env Transform",
+          },
+          {
+            type: "doc",
+            docId: "gitguard/index",
+            position: "left",
+            label: "GitGuard",
           },
           {
             type: "doc",
