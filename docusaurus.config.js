@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -15,7 +16,7 @@ const config = {
   favicon: "img/favicon.ico",
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
-
+  plugins: [path.resolve(__dirname, "plugins/docusaurus-azext-plugin.js")],
   presets: [
     [
       "classic",
@@ -45,28 +46,53 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "pull-request-utils/index",
+            type: "dropdown",
+            label: "Extensions",
             position: "left",
-            label: "Pull Request Utils",
+            items: [
+              {
+                type: "doc",
+                docId: "extensions/pull-request-utils/index",
+                label: "Pull Request Utils",
+              },
+              {
+                type: "doc",
+                docId: "extensions/env-transform/index",
+                label: "Env Transform",
+              },
+              {
+                type: "doc",
+                docId: "extensions/gitguard/index",
+                label: "GitGuard",
+              },
+              {
+                type: "doc",
+                docId: "extensions/auto-state/index",
+                label: "Auto State",
+              },
+            ],
+          },
+          {
+            type: "dropdown",
+            label: "Tools",
+            position: "left",
+            items: [
+              {
+                type: "doc",
+                docId: "tools/azext/index",
+                label: "AzExt",
+              },
+              {
+                href: "https://github.com/facebook/docusaurus",
+                label: "Ext Core",
+              },
+            ],
           },
           {
             type: "doc",
-            docId: "env-transform/index",
+            docId: "guide/index",
+            label: "Guide",
             position: "left",
-            label: "Env Transform",
-          },
-          {
-            type: "doc",
-            docId: "gitguard/index",
-            position: "left",
-            label: "GitGuard",
-          },
-          {
-            type: "doc",
-            docId: "auto-state/index",
-            position: "left",
-            label: "Auto State",
           },
           {
             href: "https://github.com/facebook/docusaurus",
