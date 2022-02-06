@@ -1,13 +1,48 @@
 {
   "name": "devops-extensions-docs",
-  "version": "0.0.1",
   "description": "Docs for my Azure DevOps extensions",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "dev": "docsify serve ./docs/"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "npm run download:ext && docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc",
+    "download:ext": "node ./scripts/download-extensions.js"
   },
   "author": "Joachim Dalen (https://joachimdalen.no)",
   "license": "ISC",
   "dependencies": {
-    "docsify-cli": "^4.4.3"
+    "@docusaurus/core": "2.0.0-beta.15",
+    "@docusaurus/preset-classic": "2.0.0-beta.15",
+    "@mdx-js/react": "^1.6.21",
+    "axios": "^0.25.0",
+    "clsx": "^1.1.1",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "2.0.0-beta.15",
+    "@tsconfig/docusaurus": "^1.0.4",
+    "typescript": "^4.5.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
