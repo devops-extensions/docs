@@ -10,7 +10,7 @@ const config = {
   tagline:
     "Documentation site for all my Azure DevOps Extensions as well as a developer guide to building extensions",
   url: "https://devops-extensions.github.io",
-  baseUrl: "/",
+  baseUrl: "/docs/",
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
