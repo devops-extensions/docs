@@ -3,20 +3,19 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Azure DevOps Extensions",
-  tagline: "Documentation site for all my Azure DevOps Extensions",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Documentation and guides",
+  tagline:
+    "Documentation site for all my Azure DevOps Extensions as well as a developer guide to building extensions",
+  url: "https://devops-extensions.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
-  plugins: [path.resolve(__dirname, "plugins/docusaurus-azext-plugin.js")],
+  favicon: "img/favicon-16x16.png",
+  organizationName: "devops-extensions", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
   presets: [
     [
       "classic",
@@ -24,9 +23,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -78,67 +74,44 @@ const config = {
             position: "left",
             items: [
               {
-                type: "doc",
-                docId: "tools/azext/index",
+                href: "https://github.com/joachimdalen/azext/blob/master/docs/index.md",
                 label: "AzExt",
               },
               {
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/joachimdalen/azdevops-ext-core",
                 label: "Ext Core",
               },
             ],
           },
-          {
-            type: "doc",
-            docId: "guide/index",
-            label: "Guide",
-            position: "left",
-          },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
+          // {
+          //   type: "doc",
+          //   docId: "guide/index",
+          //   label: "Guide",
+          //   position: "left",
+          // },
         ],
       },
       footer: {
         style: "dark",
         links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
+          // {
+          //   title: "Docs",
+          //   items: [
+          //     {
+          //       label: "Tutorial",
+          //       to: "/docs/intro",
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: "GitHub",
+          //   items: [
+          //     {
+          //       label: "Auto State",
+          //       href: "https://github.com/joachimdalen/azdevops-auto-state",
+          //     },
+          //   ],
+          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Joachim Dalen. Built with Docusaurus.`,
       },
