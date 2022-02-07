@@ -84,6 +84,12 @@ const config = {
               },
             ],
           },
+          {
+            type: "doc",
+            docId: "privacy",
+            label: "Privacy",
+            position: "left",
+          },
           // {
           //   type: "doc",
           //   docId: "guide/index",
@@ -95,15 +101,15 @@ const config = {
       footer: {
         style: "dark",
         links: [
-          // {
-          //   title: "Docs",
-          //   items: [
-          //     {
-          //       label: "Tutorial",
-          //       to: "/docs/intro",
-          //     },
-          //   ],
-          // },
+          {
+            title: "Docs",
+            items: [
+              {
+                label: "Privacy",
+                to: "/docs/privacy",
+              },
+            ],
+          },
           // {
           //   title: "GitHub",
           //   items: [
