@@ -67,6 +67,11 @@ const config = {
                 docId: "extensions/auto-state/index",
                 label: "Auto State",
               },
+              {
+                type: "doc",
+                docId: "extensions/work-item-wiki/index",
+                label: "Work Item Wiki",
+              },
             ],
           },
           {
