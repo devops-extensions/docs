@@ -24,4 +24,4 @@ If you have any questions, please submit an issue in the repository for the rele
 - [Work Item Wiki](https://github.com/joachimdalen/azdevops-work-item-wiki).
 - [Other](https://github.com/joachimdalen/AzureDevOpsExtensions).
 
-> This privacy policy was last updated 07-02-2022
+> This privacy policy was last updated 20-02-2022
