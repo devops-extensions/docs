@@ -6,6 +6,7 @@ This document serves as the privacy policy for the following extensions publishe
 - Env Transform
 - Pull Request Utils
 - Git Guard
+- Work Item Wiki
 
 ## Security of information
 
@@ -20,6 +21,7 @@ I respect the wish for privacy, therefore none of my extensions contains any tra
 If you have any questions, please submit an issue in the repository for the relevant extension:
 
 - [Auto State](https://github.com/joachimdalen/azdevops-auto-state).
+- [Work Item Wiki](https://github.com/joachimdalen/azdevops-work-item-wiki).
 - [Other](https://github.com/joachimdalen/AzureDevOpsExtensions).
 
 > This privacy policy was last updated 07-02-2022
