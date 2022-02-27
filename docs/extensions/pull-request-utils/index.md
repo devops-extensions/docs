@@ -4,6 +4,19 @@ sidebar_position: 1
 
 # Pull Request Utils
 
-An extension with tasks to manage pull requests. Includes posting comments on pull requests, checking if tags are assigned, assigning tags, updating the description
+Pull Request Utils is a collection of tasks to interact with pull requests from your pipelines. The tasks currently provide:
 
-Comming soon. For now refer to [Marketplace](https://marketplace.visualstudio.com/items?itemName=joachimdalen.pull-request-utils)
+- Creating and updating comments
+- Assigning tags
+- Removing tags
+- Checking if tag is assigned
+- Creating/Updating custom statuses
+- Updating pull request description
+
+:::info
+
+❗ This extension requires the user account `<project name> Build Service (<org name>)` to be granted the permission `Contribute to pull requests`
+
+:::
+
+Please report any feedback/issue [here](https://github.com/joachimdalen/azdevops-pull-request-utils)
