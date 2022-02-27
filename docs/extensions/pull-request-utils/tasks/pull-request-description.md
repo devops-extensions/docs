@@ -1,5 +1,7 @@
 # Pull Request Description
 
+Update pull request descriptions during pipeline runs
+
 ## YAML Snippet
 
 ```yaml
@@ -12,6 +14,7 @@
     outputVariable: PullRequest.DescriptionContent #The name of the output variable to write the description to. Default `PullRequest.DescriptionContent`. Applies to actions `view`
     isOutput: #If set, `outputVariable` is set as output and accessible from other jobs. Applies to actions `view`
     stripIdentifiers: false #Strip internal modifiers before setting variable. Applies to actions `view`
+
 ```
 
 ## Arguments
@@ -26,6 +29,7 @@
 | `isOutput` <br />Is output                 | **(Optional)** If set, `outputVariable` is set as output and accessible from other jobs. Applies to actions `view` <br />                                                                                                                                                            |
 | `stripIdentifiers` <br />Strip Identifiers | **(Optional)** Strip internal modifiers before setting variable. Applies to actions `view` <br />                                                                                                                                                                                    |
 
+
 ## Examples
 
 ### Append content
@@ -36,11 +40,12 @@ Append will append content to the end of the PR on the first run. On sequential 
 steps:
   - task: PullRequestDescription@0
     inputs:
-      action: "append"
-      content: "This content will be appended to the bottom of the PR description"
+      action: 'append'
+      content: 'This content will be appended to the bottom of the PR description'
 ```
 
 ---
+
 
 ### Replace content
 
@@ -50,11 +55,12 @@ The following configuration will replace the entire pull request description on 
 steps:
   - task: PullRequestDescription@0
     inputs:
-      action: "replace"
-      content: "This content will be the only part of the PR description"
+      action: 'replace'
+      content: 'This content will be the only part of the PR description'
 ```
 
 ---
+
 
 ### Set as variable
 
@@ -65,8 +71,8 @@ steps:
   - task: PullRequestDescription@0
     name: setDescriptionVariable
     inputs:
-      action: "view"
-      outputVariable: "PullRequest.DescriptionContent"
+      action: 'view'
+      outputVariable: 'PullRequest.DescriptionContent'
       isOutput: true
       stripIdentifiers: false
   - script: echo $(setDescriptionVariable.PullRequest.DescriptionContent)
@@ -75,6 +81,7 @@ steps:
 `PullRequestDescription` uses some interal modifiers to know where to append content to. If you wish to remove these before setting the variable, set `stripIdentifiers` to true.
 
 ---
+
 
 ## Other
 

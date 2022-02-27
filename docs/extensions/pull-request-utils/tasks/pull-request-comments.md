@@ -1,6 +1,6 @@
 # Pull Request Comments
 
-Use this task to post comments on Pull Requests from your pipeline.
+Add comments to a pull request
 
 ## YAML Snippet
 
@@ -15,10 +15,10 @@ Use this task to post comments on Pull Requests from your pipeline.
     useDefined: false #If set, overrides the value from `System.PullRequest.PullRequestId`
     pullRequestId: $(System.PullRequest.PullRequestId) #If no id is given, the value from `System.PullRequest.PullRequestId` is taken. If a value is given, this overrides the value from `System.PullRequest.PullRequestId`
     type: Text #The type of comment. `Text` represents a regular user comment while `System` indicates a system message
+
 ```
 
 ## Arguments
-
 | Argument                                                     | Description                                                                                                                                                                                                                                     |
 | :----------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `action` <br />Action                                        | **(Optional)** Action to perform <br /> Options: `create`, `createOrUpdate`, `update` <br /> Default value: `create`                                                                                                                            |
@@ -30,36 +30,38 @@ Use this task to post comments on Pull Requests from your pipeline.
 | `pullRequestId` <br />Pull Request Id                        | **(Optional)** If no id is given, the value from `System.PullRequest.PullRequestId` is taken. If a value is given, this overrides the value from `System.PullRequest.PullRequestId` <br /> Default value: `$(System.PullRequest.PullRequestId)` |
 | `type` <br />Comment Type                                    | **(Optional)** The type of comment. `Text` represents a regular user comment while `System` indicates a system message <br /> Options: `Text`, `System` <br /> Default value: `Text`                                                            |
 
+
 ## Examples
 
-### Posting a comment
+## Posting a comment
 
 Given the following pipeline configuration
 
 ```yaml
 steps:
   - task: PullRequestComments@0
-    displayName: "Post a pull request comment"
+    displayName: 'Post a pull request comment'
     inputs:
-      content: "This is a comment posted from pipeline $(Build.Repository.Name)"
-      status: "Pending"
-      action: "create"
+      content: 'This is a comment posted from pipeline $(Build.Repository.Name)'
+      status: 'Pending'
+      action: 'create'
 ```
 
 after a run against a pull request it will post the comment:
 
 ![simple-pr-comment.png](/img/pull-request-utils/simple-pr-comment.png)
 
-### Posting a comment with markdown
+
+## Posting a comment with markdown
 
 Given the following pipeline configuration
 
-```yaml title=comment.template.yml
+```yaml
 steps:
   - task: PullRequestComments@0
     inputs:
-      status: "Closed"
-      action: "create"
+      status: 'Closed'
+      action: 'create'
       content: |
         #Title
 
@@ -74,18 +76,19 @@ after a run against a pull request it will post the comment:
 
 ![markdown-pr-comment.png](/img/pull-request-utils/markdown-pr-comment.png)
 
-### Posting multiple comments
+
+## Posting multiple comments
 
 When posting multiple comments, ensure `commentId` is set to a unique value for each task.
 
 ```yaml
 steps:
   - task: PullRequestComments@0
-    displayName: "Post regular comment"
+    displayName: 'Post regular comment'
     inputs:
-      action: "createOrUpdate"
-      status: "Closed"
-      commentId: "regular_comment"
+      action: 'createOrUpdate'
+      status: 'Closed'
+      commentId: 'regular_comment'
       content: |
         #Title
 
@@ -95,10 +98,10 @@ steps:
         | --- | ------- |
         | 1   | Content |
   - task: PullRequestComments@0
-    displayName: "Post markdown comment"
+    displayName: 'Post markdown comment'
     inputs:
-      action: "createOrUpdate"
-      status: "Pending"
-      commentId: "markdown_comment"
-      content: "This is a comment posted from pipeline $(Build.Repository.Name)"
+      action: 'createOrUpdate'
+      status: 'Pending'
+      commentId: 'markdown_comment'
+      content: 'This is a comment posted from pipeline $(Build.Repository.Name)'
 ```
