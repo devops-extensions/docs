@@ -111,7 +111,7 @@ const config = {
             items: [
               {
                 label: "Privacy",
-                to: "/docs/docs/privacy",
+                to: "/docs/privacy",
               },
             ],
           },

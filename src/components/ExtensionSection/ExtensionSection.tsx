@@ -42,7 +42,7 @@ function Extension({
         <div className="card__footer">
           <a
             className="button button--info button--sm margin-right--sm"
-            href={useBaseUrl(`/docs/docs/extensions/${id}`)}
+            href={useBaseUrl(`/docs/extensions/${id}`)}
           >
             Read the docs
           </a>
