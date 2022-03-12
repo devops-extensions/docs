@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+---
+
 # Env Transform
 
-Comming soon. For now refer to [Marketplace](https://marketplace.visualstudio.com/items?itemName=joachimdalen.env-transform)
+An extension with tasks to perform variable replacement for environment files
+
+Please report any feedback/issue [here](https://github.com/joachimdalen/azdevops-env-transform)
