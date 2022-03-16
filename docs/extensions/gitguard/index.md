@@ -1,3 +1,9 @@
-# GitGuard
+---
+sidebar_position: 1
+---
 
-Comming soon. For now refer to [Marketplace](https://marketplace.visualstudio.com/items?itemName=joachimdalen.gitguard)
+# Git Guard
+
+GitGuard is an extension that contains a various set of tasks that can be used to verify certain git related contitions in pipelines
+
+Please report any feedback/issue [here](https://github.com/joachimdalen/azdevops-git-guard)
