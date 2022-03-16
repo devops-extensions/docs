@@ -59,7 +59,7 @@ const config = {
               },
               {
                 type: "doc",
-                docId: "extensions/gitguard/index",
+                docId: "extensions/git-guard/index",
                 label: "GitGuard",
               },
               {

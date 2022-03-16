@@ -42,7 +42,11 @@ function Extension({
         <div className="card__footer">
           <a
             className="button button--info button--sm margin-right--sm"
-            href={useBaseUrl(`/docs/extensions/${id}`)}
+            href={
+              id === "gitguard"
+                ? useBaseUrl(`/docs/extensions/git-guard`)
+                : useBaseUrl(`/docs/extensions/${id}`)
+            }
           >
             Read the docs
           </a>
