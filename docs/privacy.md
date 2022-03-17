@@ -23,6 +23,7 @@ If you have any questions, please submit an issue in the repository for the rele
 - [Auto State](https://github.com/joachimdalen/azdevops-auto-state).
 - [Work Item Wiki](https://github.com/joachimdalen/azdevops-work-item-wiki).
 - [Pull Request Utils](https://github.com/joachimdalen/azdevops-pull-request-utils).
-- [Other](https://github.com/joachimdalen/AzureDevOpsExtensions).
+- [Env Transform](https://github.com/joachimdalen/azdevops-env-transform).
+- [Git Guard](https://github.com/joachimdalen/azdevops-git-guard).
 
-> This privacy policy was last updated 12-03-2022
+> This privacy policy was last updated 17-03-2022
