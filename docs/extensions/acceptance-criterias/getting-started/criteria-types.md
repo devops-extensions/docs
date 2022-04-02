@@ -8,7 +8,7 @@ Currently the extension provides three types of access criterias that can be use
 
 ## Rule-oriented - (Checklist)
 
-The checklist criteria allows you to create a single acceptance criteria with several sub criterias.
+The checklist criteria allows you to create a single acceptance criteria with several sub criterias. [Create a new checklist criteria](../work-item-control/creating-criterias/checklist-criteria)
 
 ## Scenario-oriented - (Scenario)
 
@@ -18,8 +18,8 @@ Scenario oriented criterias follows the _Given/When/Then_ sequence and allows yo
 - _When_ I do some action
 - _Then_ I exepect some result
 
-This extension also adds a _And_ sequence element.
+This extension also adds a _And_ sequence element. [Create a new scenario criteria](../work-item-control/creating-criterias/scenario-criteria)
 
 ## Simple - (Text)
 
-By defualt Azure DevOps provides a single text field to create your acceptance criterias. This extension also provides a type textfield if your criterias does not fit into the rule-oriented or scenario-oriented model. [Create a new text criteria](../work-item-control/creating-criterias/text-criteria.md)
+By defualt Azure DevOps provides a single text field to create your acceptance criterias. This extension also provides a type textfield if your criterias does not fit into the rule-oriented or scenario-oriented model. [Create a new text criteria](../work-item-control/creating-criterias/text-criteria)
