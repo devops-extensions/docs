@@ -1,6 +1,6 @@
 # Work Hub
 
-The main view for Acceptance Criterias is located under the `Boards` menu. Here you will be able to view the criterias for all work items in the project.
+The view for Acceptance Criterias is located under the main navigation menu. Here you will be able to view the criterias for all work items in the project.
 
 ![](/img/acceptance-criterias/nav-menu.png)
 
@@ -12,7 +12,7 @@ The main view for Acceptance Criterias is located under the `Boards` menu. Here 
 2. Click the title of a work item to show the work item form
 3. Refresh all data
 4. Show/Hide the filter bar
-5. [Open settings](./settings/index)
+5. [Open settings](./settings/index.md)
 6. Click the criteria title to show the criteria view
 
 ### 2. Open work item form
