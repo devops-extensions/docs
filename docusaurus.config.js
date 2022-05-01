@@ -7,8 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Documentation and guides",
-  tagline:
-    "Documentation site for all my Azure DevOps Extensions",
+  tagline: "Documentation site for all my Azure DevOps Extensions",
   url: "https://docs.devops-extensions.dev",
   baseUrl: "/",
   trailingSlash: false,
@@ -49,8 +48,13 @@ const config = {
             items: [
               {
                 type: "doc",
-                docId: "extensions/pull-request-utils/index",
-                label: "Pull Request Utils",
+                docId: "extensions/acceptance-criterias/index",
+                label: "Acceptance Criterias",
+              },
+              {
+                type: "doc",
+                docId: "extensions/auto-state/index",
+                label: "Auto State",
               },
               {
                 type: "doc",
@@ -64,8 +68,8 @@ const config = {
               },
               {
                 type: "doc",
-                docId: "extensions/auto-state/index",
-                label: "Auto State",
+                docId: "extensions/pull-request-utils/index",
+                label: "Pull Request Utils",
               },
               {
                 type: "doc",
