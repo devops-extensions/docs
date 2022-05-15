@@ -6,9 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Documentation and guides",
+  title: "Extension Documentation",
   tagline: "Documentation site for all my Azure DevOps Extensions",
-  url: "https://docs.devops-extensions.dev",
+  url: "https://devops-extensions.dev",
   baseUrl: "/",
   trailingSlash: false,
   onBrokenLinks: "throw",
