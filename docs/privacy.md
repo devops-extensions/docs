@@ -7,6 +7,7 @@ This document serves as the privacy policy for the following extensions publishe
 - Pull Request Utils
 - Git Guard
 - Work Item Wiki
+- Acceptance Criterias
 
 ## Security of information
 
@@ -25,5 +26,6 @@ If you have any questions, please submit an issue in the repository for the rele
 - [Pull Request Utils](https://github.com/joachimdalen/azdevops-pull-request-utils).
 - [Env Transform](https://github.com/joachimdalen/azdevops-env-transform).
 - [Git Guard](https://github.com/joachimdalen/azdevops-git-guard).
+- [Acceptance Criterias](https://github.com/joachimdalen/azdevops-acceptance-criterias).
 
-> This privacy policy was last updated 17-03-2022
+> This privacy policy was last updated 15-05-2022
