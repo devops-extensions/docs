@@ -6,12 +6,6 @@ The following diagram shows the approval flow for acceptance criterias.
 
 If a criteria has approvers assigned, only the user or a member of the approver group can complete the criteria, when no approvers is assigned, anyone can complete it. Processing can be done from the Criteria Details view.
 
-:::info Approval and Rejection comments
-
-Approval and rejection comments are not available yet, but on the [Roadmap](https://github.com/joachimdalen/azdevops-acceptance-criterias/issues/4)
-
-:::
-
 ## Completing
 
 The criteria goes into the `Completed` state when no approvers is assigned.
@@ -30,9 +24,13 @@ When a criteria is assigned an approver, the criteria goes into the approval flo
 
 Once a Team or Permission Group is assigned as an approver, only one member needs to approve.
 
-| ![](/img/acceptance-criterias/scenario-criteria-send-to-approval.png) | ![](/img/acceptance-criterias/scenario-criteria-approve-or-reject.png) |
-| --------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Send the criteria to approval by selecting `Send to approval`         | Processing can now be done by a member of the required approvers group |
+| ![](/img/acceptance-criterias/scenario-criteria-send-to-approval.png)                                                                  | ![](/img/acceptance-criterias/scenario-criteria-approve-or-reject.png)                                         |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Send the criteria to approval by selecting `Send to approval`. Processing can now be done by a member of the required approvers group. | The approver can now chose to reject or approve the criteria. Optionally a comment can be added with a reason. |
+
+### Comments
+
+The main comment will show at the top. Old comments can be found under the [history](./history.md) tab of the criteria.
 
 ### Rejection
 
