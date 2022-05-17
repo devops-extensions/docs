@@ -22,6 +22,8 @@ Accepance Criterias is an extension to allow for better management of acceptance
   - Checklist based
 - Approval flows
 - Hub for processing criterias
+- Processing History
+- Approval / Rejection Comments
 
 :::caution Images might deviate
 
