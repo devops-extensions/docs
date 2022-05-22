@@ -5,10 +5,10 @@ These settings can be found under Acceptance Critieras in project settings.
 
 ![](/img/acceptance-criterias/admin-hub.png)
 
-## Allowed criteria types
+## Limit criteria types
 
 This settings allows you to disable what criteria types the users are allowed to create.
 
-## Rquire approver
+## Require approver on all criterias
 
 Turning this setting to on will prevent users from creating new criterias without an approver assigned.
