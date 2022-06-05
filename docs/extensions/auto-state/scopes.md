@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Scopes
 
 This section describes the scopes that are requested by Auto State, and why they are needed.

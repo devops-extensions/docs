@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Auto State
 
 ## Information about the New Boards Hub feature
