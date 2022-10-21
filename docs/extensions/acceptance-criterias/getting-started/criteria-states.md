@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Criteria States
 
-Criterias have two different states. One state that tracks all acceptance criteria created for a work item, and one state that tracks the progress for the individual criteria.
+Criterias have two different states. One state tracks all acceptance criteria created for a work item, and another state tracks the progress of the individual criteria.
 
 ## Work item states
 
