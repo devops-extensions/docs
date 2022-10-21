@@ -4,6 +4,14 @@ There are a few steps that needs to be done after installing Acceptance Criteria
 
 ## Activating the work hub and admin hub
 
+:::caution
+
+Activation of this extension must be done by a Project or Collection administrator
+
+:::
+
+This extension must be activated under the "Preview Features" menu of Azure DevOps. See ["Enable features for your use"](https://learn.microsoft.com/en-us/azure/devops/project/navigation/preview-features?view=azure-devops&tabs=new-account-enabled#enable-features-for-your-use) for how to access the menu.
+
 To activate the work hub that gives an overview over all criterias, follow these steps:
 
 After installing the extension a Project or Organization administrator will need to toggle the feature flag to `On`. This feature flag is scoped to individual projects, that means you need to be inside a project for the feature flag to appear. The url should look something like `https://dev.azure.com/ORGANIZATION/PROJECT`
@@ -62,4 +70,4 @@ For the best experience, the control should be added on a dedicated page on the 
    ![](/img/acceptance-criterias/control-added.png)
 
 3. Now you should see the new page and control on your user stories.
-    ![](/img/acceptance-criterias/work-item-custom-page.png)
+   ![](/img/acceptance-criterias/work-item-custom-page.png)
