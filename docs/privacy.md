@@ -1,6 +1,6 @@
 # Privacy Policy
 
-This document serves as the privacy policy for the following extensions published under the publisher JoachimDalen
+This document serves as the privacy policy for the following extensions published under the publisher [JoachimDalen](https://github.com/joachimdalen)
 
 - Auto State
 - Env Transform
