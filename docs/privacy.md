@@ -15,7 +15,7 @@ All information/data processed in the extensions is contained within your Azure 
 
 ## Collection and use of your personal information
 
-I respect the wish for privacy, therefore none of my extensions contains any tracking on usage or issues. Based on this I am dependent on bug reports and discussions to be able to solve any issues and improve the extensions.
+I respect the wish for privacy therefore, none of my extensions contain any tracking on usage or issues. Based on this, I am dependent on bug reports and discussions to be able to solve any issue and improve the extensions.
 
 ## Contact
 
